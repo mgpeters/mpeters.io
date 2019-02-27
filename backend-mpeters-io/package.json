@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
-    "client": "npm run start --prefix node_modules",
+    "client": "npm run start --prefix ",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
