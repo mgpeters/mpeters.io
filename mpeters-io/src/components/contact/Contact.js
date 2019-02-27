@@ -95,7 +95,7 @@ function Select (props){
 Select.propTypes = {
 
 }
-class FormComponent extends Component { //https://medium.com/@agoiabeladeyemi/the-complete-guide-to-forms-in-react-d2ba93f32825 2/22/19
+class ContactForm extends Component { //https://medium.com/@agoiabeladeyemi/the-complete-guide-to-forms-in-react-d2ba93f32825 2/22/19
     state = {
         formIsValid: false, //tracks the overall form validity
         formControls: {
@@ -244,4 +244,4 @@ class FormComponent extends Component { //https://medium.com/@agoiabeladeyemi/th
     }
 }
 
-export default FormComponent;
+export default ContactForm;
