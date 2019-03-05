@@ -10,7 +10,6 @@ function Modal (props) {
             <InfoWindow
                 currentSelection= { props.currentSelection }/>
             <button className='closebutton' onClick={ props.handleClose }>
-            X
             </button>
         </section>
     </div>
