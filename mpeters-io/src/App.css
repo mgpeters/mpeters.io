@@ -162,6 +162,9 @@ body {
 
 .closebutton { /* https://stackoverflow.com/questions/10019797/pure-css-close-button */
   float: left;
+  position: sticky;
+  top: 10px;
+  left: 10px;
   cursor: pointer;
   color: #fff;
   border: 1px solid #AEAEAE;
@@ -175,7 +178,7 @@ body {
 }
 
 .closebutton:before {
-  content: "X";
+  content: "x";
 }
 
 .display-block {

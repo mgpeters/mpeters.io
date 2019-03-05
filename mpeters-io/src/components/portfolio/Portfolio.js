@@ -6,9 +6,9 @@ import PropTypes from 'prop-types';
 function Modal (props) {
   return (
     <div className={ 'modal ' + props.displayToggle }>
-      <button className='closebutton' onClick={ props.handleClose }>
-      </button>
         <section className='modal-main'>
+        <button className='closebutton' onClick={ props.handleClose }>
+        </button>
           <InfoWindow
                 currentSelection= { props.currentSelection }/>
         </section>
