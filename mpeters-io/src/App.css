@@ -163,8 +163,9 @@ body {
 .closebutton { /* https://stackoverflow.com/questions/10019797/pure-css-close-button */
   float: left;
   position: sticky;
-  top: 10px;
-  left: 10px;
+  position: -webkit-sticky; /* Safari */
+  top: 1px;
+  left: 1px;
   cursor: pointer;
   color: #fff;
   border: 1px solid #AEAEAE;
