@@ -80,6 +80,8 @@ class Portfolio extends Component {
     this.showModal();
   };
 
+
+
   render() {
     return (
       <div className="portfolio">
