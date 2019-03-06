@@ -8,7 +8,7 @@ class ThumbPhoto extends Component {
 
   render() {
     return (
-      <div 
+      <div
         onClick= { () => { this.props.changeSelection(this.state.data) } }
         className="portfolio__past-projects--thumbnail">
         <h3>{this.props.name}</h3>
