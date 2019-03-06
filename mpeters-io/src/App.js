@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Header from './components/header/Header.js';
 import Main from './components/main/Main.js';
 import About from './components/about/About';
-import Portfolio from './components/portfolio/Portfolio';
+// import Portfolio from './components/portfolio/Portfolio';
+import PortfolioAlt from './components/portfolio/PortfolioAlt';
 import Resume from './components/resume/Resume';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer.js';
@@ -22,7 +23,7 @@ class App extends Component {
             <About />
           )} />
           <Route exact path='/portfolio' render={() => (
-            <Portfolio />
+            <PortfolioAlt />
           )} />
           <Route exact path='/resume' render={() => (
             <Resume />
