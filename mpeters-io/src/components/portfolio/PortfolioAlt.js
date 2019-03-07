@@ -74,7 +74,7 @@ class PortfolioAlt extends Component {
                             </Modal.Body>
 
                             <Modal.Footer>
-                                <Button variant="secondary">Close</Button>
+                                <Button variant="secondary" onClick={this.handleClose}>Close</Button>
                             </Modal.Footer>
                         </Modal>
                 <div className="portfolio__past-projects">
