@@ -6,6 +6,7 @@ import About from './components/about/About';
 import PortfolioAlt from './components/portfolio/PortfolioAlt';
 import Resume from './components/resume/Resume';
 import Contact from './components/contact/Contact';
+//import ContactBootstrap from './components/contact/ContactBootstrap.js';
 import Footer from './components/footer/Footer.js';
 import './App.css';
 import { Route } from 'react-router-dom';

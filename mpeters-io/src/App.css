@@ -213,6 +213,10 @@ body {
 
 /* Contact Form */
 
+.contact-form {
+  display: inline-block;
+}
+
 .form-control {
   width: 50%;
   border: 1px solid #ccc;

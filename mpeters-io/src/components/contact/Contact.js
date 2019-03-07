@@ -209,7 +209,8 @@ class ContactForm extends Component { //https://medium.com/@agoiabeladeyemi/the-
 
     render() {
         return (
-            <div>
+            <section className='contact-form'>
+                <h2>Contact Me</h2>
                 <TextInput
                     name="name"
                     placeholder={ this.state.formControls.name.placeholder }
@@ -239,7 +240,7 @@ class ContactForm extends Component { //https://medium.com/@agoiabeladeyemi/the-
                     disabled={!this.state.formIsValid}>
                     Submit
                 </button>
-            </div>
+            </section>
         );
     }
 }
