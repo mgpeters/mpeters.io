@@ -189,6 +189,10 @@ body {
 .display-none {
   display: none;
 }
+
+.portfolio__infowindow--details{
+  text-align: center;
+}
 /* Modal Info Window */
 
 .infowindow__list {
