@@ -214,11 +214,12 @@ body {
 /* Contact Form */
 
 .contact-form {
+  width: 75%;
   display: inline-block;
 }
 
 .form-control {
-  width: 50%;
+  width: 100%;
   border: 1px solid #ccc;
   padding: 10px; 
 }
