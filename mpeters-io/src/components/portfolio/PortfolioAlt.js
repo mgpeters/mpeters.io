@@ -55,6 +55,12 @@ class PortfolioAlt extends Component {
                                 originalPhoto = { this.state.currentSelection.imageData.original }
                                 projectName = { this.state.currentSelection.name }
                                 />
+                                <Button variant="secondary" href={this.state.currentSelection.links.gitHub} block>
+                                    Github
+                                </Button>
+                                <Button variant="secondary" href={this.state.currentSelection.links.gitHub} block>
+                                    Try Me!
+                                </Button>
                                 <section className="portfolio__infowindow--details">
                                     <h4>Developed for:</h4>
                                         <p>{ this.state.currentSelection.about.for} { this.state.currentSelection.about.program ? ' - ' + this.state.currentSelection.about.program : ''}</p>
@@ -68,12 +74,7 @@ class PortfolioAlt extends Component {
                             </Modal.Body>
 
                             <Modal.Footer>
-                                <Button variant="secondary" href={this.state.currentSelection.links.gitHub}>
-                                    Github
-                                </Button>
-                                <Button variant="secondary" onClick={this.handleClose}>
-                                    Close
-                                </Button>
+                                <Button variant="secondary">Close</Button>
                             </Modal.Footer>
                         </Modal>
                 <div className="portfolio__past-projects">

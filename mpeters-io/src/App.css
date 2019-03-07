@@ -193,6 +193,10 @@ body {
 .portfolio__infowindow--details{
   text-align: center;
 }
+
+.button-group {
+  text-align: center;
+}
 /* Modal Info Window */
 
 .infowindow__list {
