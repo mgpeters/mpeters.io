@@ -55,6 +55,16 @@ class PortfolioAlt extends Component {
                                 originalPhoto = { this.state.currentSelection.imageData.original }
                                 projectName = { this.state.currentSelection.name }
                                 />
+                                <div className="portfolio__infowindow--details">
+                                    <p>Developed for:</p>
+                                        { this.state.currentSelection.about.for} { this.state.currentSelection.about.program ? ' - ' + this.state.currentSelection.about.program : ''}
+                                    <p>Tech Used:</p>
+                                        <ul className='infowindow__list'> { this.state.currentSelection.techUsed.map( (tech, key) => (<li key={ key }>{ tech }</li>)) }</ul>
+                                    <p>What I learned:</p>
+                                        { this.state.currentSelection.about.learned }
+                                    <p>Isses encountered:</p>
+                                        { this.state.currentSelection.about.issues }
+                                </div>
                             </Modal.Body>
 
                             <Modal.Footer>
