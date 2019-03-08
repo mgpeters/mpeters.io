@@ -44,7 +44,7 @@ class PortfolioAlt extends Component {
         return (
             <section className="portfolio">
                 <div className="portfolio__wrap">
-                    <h2 className="section-header">Portfolio</h2>
+                    <h2 className="section-header">Past Work</h2>
                         <Modal show={this.state.show} onHide={this.handleClose}>
                             <Modal.Header closeButton>
                                 <Modal.Title>{this.state.currentSelection.name}</Modal.Title>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Button from 'react-bootstrap/Button';
 import axios from 'axios';
 
 function TextInput (props){
@@ -117,7 +116,8 @@ class ContactForm extends Component { //https://medium.com/@agoiabeladeyemi/the-
                 touched: false,
                 validationRules: {
                     minLength: 3,
-                    isRequired: true //add if required
+                    isRequired: true,
+                    isEmail: true //add if required
                 }
             },
             textarea: {
