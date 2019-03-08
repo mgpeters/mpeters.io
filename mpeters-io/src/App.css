@@ -102,6 +102,11 @@ body {
     width: 100%;
 }
 
+.portfolio__past-projects {
+  margin: 5px 5px;
+  padding: 10px 10px 10px 10px;
+}
+
 .portfolio__past-projects--thumbnail__wrap {
   display: flex;
   flex-wrap: wrap;

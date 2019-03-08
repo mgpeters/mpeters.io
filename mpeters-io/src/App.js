@@ -15,7 +15,7 @@ import { Route } from 'react-router-dom';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <main className="App">
         <Header/>
           <Route exact path='/' render={() => (
             <Main />
@@ -33,7 +33,7 @@ class App extends Component {
             <Contact />
           )} />
         <Footer/>
-      </div>
+      </main>
     );
   }
 }
