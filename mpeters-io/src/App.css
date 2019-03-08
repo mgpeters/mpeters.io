@@ -120,6 +120,10 @@ body {
   margin: 5px;
 }
 
+.portfolio__past-projects--thumbnail h3{
+  font-size: 3.2vw;
+}
+
 .portfolio__past-projects--thumbnail:hover { /* https://www.w3schools.com/css/css3_images.asp 1/2/19 */
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
@@ -132,6 +136,9 @@ body {
   .portfolio__past-projects--thumbnail { /* https://www.w3schools.com/css/css3_images.asp 1/2/19 */
     width: 85%;
   }
+  .portfolio__past-projects--thumbnail h3 {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (min-width: 520px) {
@@ -143,6 +150,9 @@ body {
 @media only screen and (min-width: 800px) {
   .portfolio__past-projects--thumbnail { /* https://www.w3schools.com/css/css3_images.asp 1/2/19 */
     width: 30%;
+  }
+  .portfolio__past-projects--thumbnail h3 {
+    font-size: 22px;
   }
 }
 
