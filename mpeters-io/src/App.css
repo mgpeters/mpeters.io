@@ -216,6 +216,13 @@ body {
 
 .portfolio__infowindow--details{
   text-align: center;
+  margin: 10px 5px 10px 5px;
+  padding: 5px 5px 5px 5px;
+}
+
+.portfolio-photo {
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
 }
 
 .button-group {

@@ -62,13 +62,13 @@ class PortfolioAlt extends Component {
                                     Try Me!
                                 </Button>
                                 <section className="portfolio__infowindow--details">
-                                    <h4>Developed for:</h4>
+                                    <h4 className="section-header">Developed for:</h4>
                                         <p>{ this.state.currentSelection.about.for} { this.state.currentSelection.about.program ? ' - ' + this.state.currentSelection.about.program : ''}</p>
-                                    <h4>Tech Used:</h4>
+                                    <h4 className="section-header">Tech Used:</h4>
                                         <ul className='infowindow__list'> { this.state.currentSelection.techUsed.map( (tech, key) => (<li key={ key }>{ tech }</li>)) }</ul>
-                                    <h4>What I learned:</h4>
+                                    <h4 className="section-header">What I learned:</h4>
                                         <p>{ this.state.currentSelection.about.learned }</p>
-                                    <h4>Issues encountered:</h4>
+                                    <h4 className="section-header">Issues encountered:</h4>
                                         <p>{ this.state.currentSelection.about.issues }</p>
                                 </section>
                             </Modal.Body>
