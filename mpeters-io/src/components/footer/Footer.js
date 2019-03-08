@@ -8,10 +8,16 @@ class Footer extends Component {
         <section className="app-footer">
           <div className="app-footer__contact-info">
             <div className="app-footer__contact-info--details">
-           ... 
+          ...
             </div>
           </div>
-          <SocialLinks/>
+          <SocialLinks
+            width={35}
+            height={35}
+            style={{}}
+            fill={'#fff'}
+            className={''}
+            viewBox={"0 0 32 32"} />
         </section>
       </footer>
     );

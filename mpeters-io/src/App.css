@@ -257,12 +257,13 @@ body {
 .contact-form__input {
   margin: auto;
   padding: 20px 10px 20px 10px;
+  max-width: 420px;
 }
 
 .form-control {
   width: 100%;
   border: 1px solid #ccc;
-  padding: 10px; 
+  padding: 10px;
 }
 
 .control-error {

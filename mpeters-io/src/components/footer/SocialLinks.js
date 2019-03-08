@@ -4,9 +4,16 @@ import svgData from '../../data/svgData.json';
 
 class SocialLinks extends Component {
     state = {
-        svgProps: svgData.svgProps,
+        svgProps: {
+          "style": this.props.style,
+          "fill": this.props.fill,
+          "width": this.props.width,
+          "className": this.props.className,
+          "height": this.props.height,
+          "viewBox": this.props.viewBox,
+          "xmlns": "http://www.w3.org/2000/svg"},
         icons: svgData.svgIcons,
-        filteredIcons: ['github', 'linkedin', 'twitter'] //add icons here
+        filteredIcons: ['github', 'linkedin','freecodecamp', 'twitter'] //add icons here
     }
 
   render() {
