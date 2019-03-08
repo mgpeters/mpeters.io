@@ -78,6 +78,11 @@ body {
 
 }
 
+.section-header {
+  margin: 5px 5px;
+  padding: 5px 5px;
+}
+
 /* Portfolio */
 
 .portfolio {
@@ -200,6 +205,7 @@ body {
 .button-group {
   text-align: center;
 }
+
 /* Modal Info Window */
 
 .infowindow__list {
@@ -219,6 +225,15 @@ body {
 .contact-form {
   width: 75%;
   display: inline-block;
+}
+
+.contact-form h2 {
+
+}
+
+.contact-form__input {
+  margin: auto;
+  padding: 20px 10px 20px 10px;
 }
 
 .form-control {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PortfolioData from '../../data/portfolioData.json';
-import ThumbPhoto from './ThumbPhoto';
+import ThumbPhoto from '../components/portfolio/ThumbPhoto';
 import PropTypes from 'prop-types';
 
 function Modal (props) {
@@ -86,7 +86,7 @@ class Portfolio extends Component {
     return (
       <div className="portfolio">
         <div className="portfolio__wrap">
-          <h2>Portfolio</h2>
+          <h2 className='section-header'>Portfolio</h2>
             <Modal
               handleClose = { this.hideModal }
               displayToggle= { this.state.display }
@@ -96,12 +96,12 @@ class Portfolio extends Component {
                 <div className="portfolio__past-projects--thumbnail__wrap">
                   {this.state.portfolioData.map((data) => (
                     <ThumbPhoto
-                    key= { data.name }
-                    data = { data }
-                    image = { data.imageData }
-                    name = { data.name }
-                    changeSelection = { this.changeSelection }
-                    showModal = { this.showModal }
+                      key= { data.name }
+                      data = { data }
+                      image = { data.imageData }
+                      name = { data.name }
+                      changeSelection = { this.changeSelection }
+                      showModal = { this.showModal }
                     />
                   ))}
                 </div>

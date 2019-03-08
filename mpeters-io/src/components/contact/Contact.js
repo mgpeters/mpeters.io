@@ -210,37 +210,39 @@ class ContactForm extends Component { //https://medium.com/@agoiabeladeyemi/the-
 
     render() {
         return (
-            <section className='contact-form'>
-                <h2>Contact Me</h2>
-                <TextInput
-                    name="name"
-                    placeholder={ this.state.formControls.name.placeholder }
-                    value={ this.state.formControls.name.value }
-                    onChange={this.changeHandler}
-                    touched={this.state.formControls.name.touched}
-                    valid={this.state.formControls.name.valid} />
+            <section className="contact-form">
+                <h2 className="section-header">Contact Me</h2>
+                    <section className='contact-form__input'>
+                        <TextInput
+                            name="name"
+                            placeholder={ this.state.formControls.name.placeholder }
+                            value={ this.state.formControls.name.value }
+                            onChange={this.changeHandler}
+                            touched={this.state.formControls.name.touched}
+                            valid={this.state.formControls.name.valid} />
 
-                <Email
-                    name="email"
-                    placeholder={this.state.formControls.email.placeholder}
-                    value={this.state.formControls.email.value}
-                    onChange={this.changeHandler}
-                    touched={this.state.formControls.email.touched}
-                    valid={this.state.formControls.email.valid} />
+                        <Email
+                            name="email"
+                            placeholder={this.state.formControls.email.placeholder}
+                            value={this.state.formControls.email.value}
+                            onChange={this.changeHandler}
+                            touched={this.state.formControls.email.touched}
+                            valid={this.state.formControls.email.valid} />
 
-                <TextArea
-                    name="textarea"
-                    placeholder={this.state.formControls.textarea.placeholder}
-                    value={this.state.formControls.textarea.value}
-                    onChange={this.changeHandler}
-                    touched={this.state.formControls.textarea.touched}
-                    valid={this.state.formControls.textarea.valid} />
+                        <TextArea
+                            name="textarea"
+                            placeholder={this.state.formControls.textarea.placeholder}
+                            value={this.state.formControls.textarea.value}
+                            onChange={this.changeHandler}
+                            touched={this.state.formControls.textarea.touched}
+                            valid={this.state.formControls.textarea.valid} />
 
-                <button
-                    onClick={this.formSubmitHandler}
-                    disabled={!this.state.formIsValid}>
-                    Submit
-                </button>
+                        <button
+                            onClick={this.formSubmitHandler}
+                            disabled={!this.state.formIsValid}>
+                            Submit
+                        </button>
+                    </section>
             </section>
         );
     }
