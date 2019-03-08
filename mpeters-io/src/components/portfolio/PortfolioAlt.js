@@ -42,7 +42,7 @@ class PortfolioAlt extends Component {
 
     render() {
         return (
-            <div className="portfolio">
+            <section className="portfolio">
                 <div className="portfolio__wrap">
                     <h2 className="section-header">Portfolio</h2>
                         <Modal show={this.state.show} onHide={this.handleClose}>
@@ -92,7 +92,7 @@ class PortfolioAlt extends Component {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         )
     }
 }

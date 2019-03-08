@@ -117,6 +117,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
+  margin: 5px;
 }
 
 .portfolio__past-projects--thumbnail:hover { /* https://www.w3schools.com/css/css3_images.asp 1/2/19 */
