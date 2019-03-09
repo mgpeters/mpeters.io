@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SVGIcon from '../shared/SVGIcon';
 import svgData from '../../data/svgData.json';
+import PropTypes from 'prop-types';
 
 class SocialLinks extends Component {
     state = {
@@ -41,6 +42,15 @@ class SocialLinks extends Component {
       </div>
     );
   }
+}
+
+SocialLinks.propTypes = {
+  style: PropTypes.object.isRequired,
+  fill: PropTypes.string.isRequired,
+  className: PropTypes.string.isRequired,
+  height: PropTypes.number.isRequired,
+  width: PropTypes.number.isRequired,
+  viewBox: PropTypes.string.isRequired
 }
 
 export default SocialLinks;
