@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-const SVG = (svgProps, title, path) =>
+const SVG = (svgProps, title, path) => 
+
   <svg
     width={ svgProps.width }
     style={ svgProps.style }

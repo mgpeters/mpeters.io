@@ -14,7 +14,7 @@ class SocialLinks extends Component {
           "viewBox": this.props.viewBox,
           "xmlns": "http://www.w3.org/2000/svg"},
         icons: svgData.svgIcons,
-        filteredIcons: ['github', 'linkedin','freecodecamp', 'twitter', 'react'] //add icons here
+        filteredIcons: ['github', 'linkedin','freecodecamp', 'twitter'] //add icons here
     }
 
   render() {
