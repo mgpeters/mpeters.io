@@ -11,7 +11,8 @@ const SVG = (svgProps, title, path) =>
     xmlns={ svgProps.xmlns }
     role={ svgProps.role }>
     <title>{title}</title>
-    { path.map((p, key) => (
+    { path.circle ? <circle cx={path.circle.cx} cy={path.circle.cy} r={path.circle.r}/> : ''}
+    { path.d.map((p, key) => (
       <path
         key={key}
         d={p}/>
@@ -35,7 +36,7 @@ SVGIcon.propTypes = {
   link: PropTypes.string.isRequired,
   svgProps: PropTypes.object.isRequired,
   name: PropTypes.string.isRequired,
-  svgIcon: PropTypes.array.isRequired,
+  svgIcon: PropTypes.object.isRequired,
 }
 
 export default SVGIcon;
