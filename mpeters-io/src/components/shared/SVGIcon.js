@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-const SVG = (svgProps, title, path) => 
+const SVG = (svgProps, title, path) =>
   <svg
     width={ svgProps.width }
     style={ svgProps.style }
@@ -11,7 +11,11 @@ const SVG = (svgProps, title, path) =>
     xmlns={ svgProps.xmlns }
     role={ svgProps.role }>
     <title>{title}</title>
-    <path d={path}/>
+    { path.map((p, key) => (
+      <path
+        key={key}
+        d={p}/>
+    ))}
   </svg>;
 
 class SVGIcon extends Component {
@@ -31,7 +35,7 @@ SVGIcon.propTypes = {
   link: PropTypes.string.isRequired,
   svgProps: PropTypes.object.isRequired,
   name: PropTypes.string.isRequired,
-  svgIcon: PropTypes.string.isRequired,
+  svgIcon: PropTypes.array.isRequired,
 }
 
 export default SVGIcon;
