@@ -4,6 +4,9 @@ import PortfolioData from '../../data/portfolioData.json';
 import ThumbPhoto from './ThumbPhoto';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import SVGIcon from '../shared/SVGIcon';
+import svgData from '../../data/svgData.json';
+
 
 function Photo (props) {
     return (
@@ -24,7 +27,9 @@ class PortfolioAlt extends Component {
         portfolioData: PortfolioData,
         currentSelection: PortfolioData[1],
         display: 'display-block',
-        show: false
+        show: false,
+        icons: svgData.svgIcons,
+        filteredIcons: '' //add icons here
     }
 
     handleClose = () => {
@@ -36,7 +41,8 @@ class PortfolioAlt extends Component {
     }
 
     changeSelection = (event) => {
-        this.setState( { currentSelection: event} )
+        this.setState( { currentSelection: event,
+                        filteredIcons: event.techUsed} )
         this.handleShow();
     };
 
@@ -65,7 +71,22 @@ class PortfolioAlt extends Component {
                                     <h4 className="section-header">Developed for:</h4>
                                         <p>{ this.state.currentSelection.about.for} { this.state.currentSelection.about.program ? ' - ' + this.state.currentSelection.about.program : ''}</p>
                                     <h4 className="section-header">Tech Used:</h4>
-                                        <ul className='infowindow__list'> { this.state.currentSelection.techUsed.map( (tech, key) => (<li key={ key }>{ tech }</li>)) }</ul>
+        {                               /*<ul className='infowindow__list'> { this.state.currentSelection.techUsed.map( (tech, key) => (<li key={ key }>{ tech }</li>)) }</ul>*/}
+                                        <div className="app-footer__social-links--wrap">
+                                            {this.state.icons.filter((fIcons) => {
+                                                return this.state.filteredIcons.indexOf(fIcons.name) > -1; // https://stackoverflow.com/questions/30389599/comparing-and-filtering-two-arrays 12.27.18
+                                            }).map((icon, key) => (
+                                                <SVGIcon
+                                                key={ key }
+                                                svgIcon = { icon.path }
+                                                svgProps = { this.state.svgProps }
+                                                name = { `${icon.name} link icon` }
+                                                link = { icon.personallink }
+                                                className = {'app-footer__social-links--svg-icon'}
+                                                />
+                                            ))
+                                            }
+                                        </div>
                                     <h4 className="section-header">What I learned:</h4>
                                         <p>{ this.state.currentSelection.about.learned }</p>
                                     <h4 className="section-header">Issues encountered:</h4>
