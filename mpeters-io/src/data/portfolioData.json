@@ -15,7 +15,7 @@
         "started": "November 24, 2018",
         "completed": ""
     },
-    "techUsed": ["html", "css3", "es5", "react", "json", "photoshop"],
+    "techUsed": ["html", "css3", "es6", "react", "json", "photoshop"],
     "links": {
         "gitHub": "https://github.com/mgpeters/mpeters.io"
     }
@@ -38,7 +38,7 @@
         "started": "November 20, 2018",
         "completed": "November 22, 2018"
     },
-    "techUsed": ["HTML", "CSS", "ES2016", "JSX", "React.js", "GoogleMaps API","JSON"],
+    "techUsed": ["html", "css3", "es6", "react", "json"],
     "links": {
         "gitHub": "https://github.com/mgpeters/neighborhood-map-FEND",
         "tryMe": ""
@@ -62,7 +62,7 @@
         "started": "October 6, 2018",
         "completed": "October 17, 2018"
     },
-    "techUsed": ["HTML", "CSS", "ES2016", "React.js", "JSON"],
+    "techUsed": ["html", "css3", "es6", "react", "json"],
     "links": {
         "gitHub": "https://github.com/mgpeters/my-reads-FEND--REACT",
         "tryMe": ""
@@ -86,7 +86,7 @@
         "started": "June 13, 2018",
         "completed": "June 20, 2018"
     },
-    "techUsed": ["HTML", "CSS", "ECMAScript 5"],
+    "techUsed": ["html", "css3", "es5"],
     "links": {
         "gitHub": "https://github.com/mgpeters/memory-game-udacity",
         "tryMe": ""
@@ -110,7 +110,7 @@
         "started": "July 11, 2018",
         "completed": "August 9, 2018"
     },
-    "techUsed": ["HTML", "CSS", "ECMAScript 5"],
+    "techUsed": ["html", "css3", "es5"],
     "links": {
         "gitHub": "https://github.com/mgpeters/classic-arcade-game-clone",
         "tryMe": ""
@@ -134,7 +134,7 @@
         "started": "September 24, 2017",
         "completed": "September 26, 2017"
     },
-    "techUsed": ["HTML", "CSS", "ECMAScript 5", "jQuery", "Foundation"],
+    "techUsed": ["html", "css3", "es5"],
     "links": {
         "gitHub": "https://github.com/mgpeters/Free-Code-Camp-Front-End-Cert/tree/master/IntFrontEndDevProjects/randomQuoteMachine",
         "tryMe": ""
@@ -158,7 +158,7 @@
         "started": "October 27, 2017",
         "completed": "November 13, 2017"
     },
-    "techUsed": ["HTML", "CSS", "ECMAScript 5", "jQuery", "Foundation"],
+    "techUsed": ["html", "css3", "es5", "jquery"],
     "links": {
         "gitHub": "https://github.com/mgpeters/Free-Code-Camp-Front-End-Cert/tree/master/IntFrontEndDevProjects/twitchTV",
         "tryMe": ""
