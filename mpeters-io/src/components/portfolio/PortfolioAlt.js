@@ -29,7 +29,15 @@ class PortfolioAlt extends Component {
         display: 'display-block',
         show: false,
         icons: svgData.svgIcons,
-        filteredIcons: '' //add icons here
+        filteredIcons: '', //add icons here
+        svgProps: {
+            "style": {},
+            "fill": '#fff',
+            "width": 35,
+            "className": '',
+            "height": 35,
+            "viewBox": '0 0 32 32',
+            "xmlns": 'http://www.w3.org/2000/svg'},
     }
 
     handleClose = () => {
@@ -41,9 +49,10 @@ class PortfolioAlt extends Component {
     }
 
     changeSelection = (event) => {
-        this.setState( { currentSelection: event,
-                        filteredIcons: event.techUsed} )
+        this.setState( {    currentSelection: event,
+                            filteredIcons: event.techUsed} )
         this.handleShow();
+        console.log(event);
     };
 
     render() {

@@ -15,7 +15,7 @@
         "started": "November 24, 2018",
         "completed": ""
     },
-    "techUsed": ["HTML", "CSS", "ES2016", "JSX", "React.js", "JSON", "Adobe Photoshop 2015"],
+    "techUsed": ["html", "css3", "es5", "react", "json", "photoshop"],
     "links": {
         "gitHub": "https://github.com/mgpeters/mpeters.io"
     }
