@@ -1,8 +1,12 @@
 //https://www.youtube.com/watch?v=EPnBO8HgyRU Send Emails with React pt II 02/27/19
 
-import express from 'express';
+/*import express from 'express';
 import bodyParser from 'body-parser';
-import nodemailer from 'nodemailer';
+import nodemailer from 'nodemailer';*/
+
+const express = require('express');
+const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
 
 const app = express();
 
