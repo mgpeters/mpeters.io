@@ -7,7 +7,7 @@ import nodemailer from 'nodemailer';*/
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
-var config = require('./config/secret');
+const config = require('./config/secret');
 
 const app = express();
 
@@ -23,7 +23,7 @@ app.post('/api/form', (req, res) => {
                 <li>Email: ${req.body.email}</li>
             </ul>
             <h3>Message</h3>
-            <p>${req.body.message}</p>
+            <p>${req.body.textarea}</p>
         `
 
         // create reusable transporter object using the default SMTP transport
