@@ -7,6 +7,7 @@ import nodemailer from 'nodemailer';*/
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+var config = require('./config/secret');
 
 const app = express();
 
@@ -31,8 +32,8 @@ app.post('/api/form', (req, res) => {
             port: 587,
             secure: false, // true for 465, false for other ports
             auth: {
-                user: 'melvin.cummings@ethereal.email', // generated ethereal user
-                pass: 'sXhSuhvFvwFYASyVWy' // generated ethereal password
+                user: config.user, // generated ethereal user
+                pass: config.pass // generated ethereal password
             }
         });
 
