@@ -31,8 +31,8 @@ app.post('/api/form', (req, res) => {
             port: 587,
             secure: false, // true for 465, false for other ports
             auth: {
-                user: account.user, // generated ethereal user
-                pass: account.pass // generated ethereal password
+                user: 'melvin.cummings@ethereal.email', // generated ethereal user
+                pass: 'sXhSuhvFvwFYASyVWy' // generated ethereal password
             }
         });
 
