@@ -1,9 +1,5 @@
 //https://www.youtube.com/watch?v=EPnBO8HgyRU Send Emails with React pt II 02/27/19
 
-/*import express from 'express';
-import bodyParser from 'body-parser';
-import nodemailer from 'nodemailer';*/
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
@@ -39,8 +35,8 @@ app.post('/api/form', (req, res) => {
 
         // setup email data with unicode symbols
         let mailOptions = {
-            from: '"Fred Foo 👻" <foo@example.com>', // sender address
-            to: "bar@example.com, baz@example.com",
+            from: req.body.email, // sender address
+            to: "mpeters",
             replyTo: 'test@testaccount.com', // list of receivers
             subject: "Hello ✔", // Subject line
             text: req.body.message, // plain text body
