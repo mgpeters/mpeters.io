@@ -73,9 +73,6 @@ class PortfolioAlt extends Component {
                                 <Button variant="secondary" href={this.state.currentSelection.links.gitHub} block>
                                     Github
                                 </Button>
-                                <Button variant="secondary" href={this.state.currentSelection.links.gitHub} block>
-                                    Try Me!
-                                </Button>
                                 <section className="portfolio__infowindow--details">
                                     <h4 className="section-header">Developed for:</h4>
                                         <p>{ this.state.currentSelection.about.for} { this.state.currentSelection.about.program ? ' - ' + this.state.currentSelection.about.program : ''}</p>
