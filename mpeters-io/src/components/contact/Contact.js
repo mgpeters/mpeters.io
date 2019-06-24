@@ -101,7 +101,7 @@ class ContactForm extends Component { //https://medium.com/@agoiabeladeyemi/the-
         formControls: {
             name: {
                 value: '',
-                placeholder: 'What is your name',
+                placeholder: 'Your name',
                 valid: false,
                 touched: false,
                 validationRules: {
@@ -111,7 +111,7 @@ class ContactForm extends Component { //https://medium.com/@agoiabeladeyemi/the-
             },
             email: {
                 value: '',
-                placeholder: 'What is your email',
+                placeholder: 'Email',
                 valid: false,
                 touched: false,
                 validationRules: {
@@ -122,7 +122,7 @@ class ContactForm extends Component { //https://medium.com/@agoiabeladeyemi/the-
             },
             textarea: {
                 value: '',
-                placeholder: 'What is your message',
+                placeholder: 'Your message',
                 valid: false,
                 touched: false,
                 validationRules: {
