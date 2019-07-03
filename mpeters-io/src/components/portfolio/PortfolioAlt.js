@@ -87,7 +87,6 @@ class PortfolioAlt extends Component {
                                                 svgIcon = { icon.path }
                                                 svgProps = { this.state.svgProps }
                                                 name = {icon.fullname}
-                                                link = { icon.personallink }
                                                 className = {'app-footer__social-links--svg-icon'} //change when you can
                                                 />
                                             ))
