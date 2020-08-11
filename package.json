@@ -4,15 +4,23 @@
   "description": "",
   "main": "test.js",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js",
-    "client": "npm run start --prefix mpeters-io",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "start": "",
+    "client": "",
+    "dev": ""
   },
   "keywords": [],
   "author": "Matt Peters",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^4.1.0"
+    "sass-loader": "^9.0.3",
+    "style-loader": "^1.2.1",
+    "webapack": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
