@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   mode: process.env.NODE_ENV,
   entry: {
-    src: './src/script/index.js',
+    src: './src/script/index.ts',
   },
   output: {
     filename: 'bundle.js',
@@ -12,7 +12,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?/,
+        test: /\.ts/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.js?/,
         exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
@@ -29,6 +34,9 @@ module.exports = {
         ],
       },
     ],
+  },
+  resolve: {
+    extensions: ['.ts', '.js'],
   },
   devServer: {
     publicPath: '/build',
