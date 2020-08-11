@@ -1,4 +1,4 @@
-// import '../styles/styles.scss';
+import '../styles/styles.scss';
 
 const testFunc = (tester: string) => {
   console.log(tester);
