@@ -5,8 +5,8 @@
   "main": "test.js",
   "scripts": {
     "start": "",
-    "client": "",
-    "dev": ""
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open"
   },
   "keywords": [],
   "author": "Matt Peters",
@@ -20,6 +20,7 @@
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
     "babel-loader": "^8.1.0",
+    "cross-env": "^7.0.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   }

@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   mode: process.env.NODE_ENV,
   entry: {
-    src: './src//script/index.js',
+    src: './src/script/index.js',
   },
   output: {
     filename: 'bundle.js',
