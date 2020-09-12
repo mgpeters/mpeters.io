@@ -8,6 +8,7 @@
     "build": "cross-env NODE_ENV=production webpack",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open",
     "lint": "eslint ./src",
+    "format": "prettier \"src/**/*.{js, ts, html}\" --write",
     "test": "jest"
   },
   "keywords": [],
