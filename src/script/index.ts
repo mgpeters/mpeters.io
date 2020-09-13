@@ -13,10 +13,31 @@ const orderArray = (arr: SocialData[]): SocialData[] => {
   return returnedArray;
 };
 
-const orderedArray = orderArray(socialLinks);
+const generateLinks = (arr: SocialData[]) => {
+  const pageLinks: HTMLElement = document.getElementById('render-div');
 
-const pageLinks = document.getElementsByClassName('page-links__render');
+  const ul: HTMLUListElement = document.createElement('ul');
+  ul.id = 'page-link-list';
+  ul.className = 'page-links__render--ul';
 
-// for (let i = 0; i < social.length; i += 1) {}
+  for (let i: number = 0; i < arr.length; i += 1) {
+    const li: HTMLLIElement = document.createElement('li');
+    li.id = `page-link-${arr[i].name}`;
+    li.className = 'page-links__render--links';
 
-console.log(orderedArray);
+    const a: HTMLAnchorElement = document.createElement('a');
+    a.href = arr[i].url;
+    a.target = '_blank';
+    a.innerHTML = arr[i].name;
+
+    li.appendChild(a);
+
+    ul.appendChild(li);
+  }
+
+  pageLinks.appendChild(ul);
+};
+
+console.log('Loaded');
+
+generateLinks(orderArray(socialLinks));
