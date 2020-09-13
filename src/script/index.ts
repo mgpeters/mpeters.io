@@ -3,10 +3,6 @@ import { socialLinks } from '../config/config';
 
 import '../styles/styles.scss';
 
-console.log('social Links', socialLinks);
-
-const pageLinks = document.getElementsByClassName('page-links__render');
-
 const orderArray = (arr: SocialData[]): SocialData[] => {
   const returnedArray = new Array(arr.length);
 
@@ -18,6 +14,8 @@ const orderArray = (arr: SocialData[]): SocialData[] => {
 };
 
 const orderedArray = orderArray(socialLinks);
+
+const pageLinks = document.getElementsByClassName('page-links__render');
 
 // for (let i = 0; i < social.length; i += 1) {}
 
