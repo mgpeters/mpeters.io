@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   mode: process.env.NODE_ENV,
   entry: {
-    src: './src/script/index.ts',
+    src: './src/index.ts',
   },
   output: {
     filename: 'bundle.js',
@@ -30,7 +30,9 @@ module.exports = {
           // sass-loader - Loads a Sass/SCSS file and compiles it to CSS.
           // css-loader - Interprets @import and url() like import/require() and will resolve them.
           // style-loader - Inject CSS into the DOM.
-          'style-loader', 'css-loader', 'sass-loader',
+          'style-loader',
+          'css-loader',
+          'sass-loader',
         ],
       },
     ],

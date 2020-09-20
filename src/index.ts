@@ -1,7 +1,7 @@
-import { SocialData } from './../common/types';
-import { socialLinks } from '../config/config';
+import { SocialData } from './common/types';
+import { socialLinks } from './config/config';
 
-import '../styles/styles.scss';
+import './styles/styles.scss';
 
 const orderArray = (arr: SocialData[]): SocialData[] => {
   const returnedArray = new Array(arr.length);
@@ -38,6 +38,7 @@ const generateLinks = (arr: SocialData[]) => {
   pageLinks.appendChild(ul);
 };
 
-console.log('Loaded');
-
+// fire!
 generateLinks(orderArray(socialLinks));
+
+module.exports = { orderArray, generateLinks };
