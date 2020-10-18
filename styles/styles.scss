@@ -2,11 +2,16 @@ body {
   background-color: rgb(252, 252, 252);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 100%;
+  height: -moz-available; /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+  height: fill-available;
 
   header {
     text-align: center;
-
+    color: rgb(61, 61, 61);
     h1 {
     }
 
@@ -18,18 +23,27 @@ body {
     .page-links__render {
       ul {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         list-style-type: none;
         margin: 0;
         padding: 0;
       }
 
       li {
+        margin: 5px;
+        padding: 5px;
+
         a {
+          color: rgb(99, 99, 99);
           text-decoration: none;
+        }
+
+        a:hover {
+          color: rgb(109, 1, 1);
         }
       }
     }
+  }
+
+  footer {
   }
 }
