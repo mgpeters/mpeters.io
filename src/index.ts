@@ -1,7 +1,7 @@
 import { SocialData } from './common/types';
 import { socialLinks } from './config/config';
 
-import './styles/styles.scss';
+import '../styles/styles.scss';
 
 const orderArray = (arr: SocialData[]): SocialData[] => {
   const returnedArray = new Array(arr.length);
@@ -41,4 +41,4 @@ const generateLinks = (arr: SocialData[]) => {
 // fire!
 generateLinks(orderArray(socialLinks));
 
-module.exports = { orderArray, generateLinks };
+export default { orderArray, generateLinks };

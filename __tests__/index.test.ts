@@ -1,10 +1,13 @@
 describe('index.ts tests', () => {
-  it('should generate social media links', () => {
+  beforeEach(() => {
     document.body.innerHTML = `
     <section class="page-links">
       <div id="render-div" class="page-links__render"></div>
     </section>
   `;
+  });
+
+  it('should generate social media links', () => {
     const { orderArray, generateLinks } = require('../src/index');
     const { socialLinks } = require('../src/config/config');
 
