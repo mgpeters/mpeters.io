@@ -1,10 +1,13 @@
 @import 'mixins';
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Prompt:wght@200&display=swap');
 
-// Font Variables
+// -- Variables --
+
+// Viewport Width
 $min_width: 320px;
 $max_width: 1200px;
 
+// Font Variables
 $max_title_font: 50px;
 $min_title_font: 30px;
 
@@ -28,9 +31,11 @@ body {
   header {
     text-align: center;
     color: rgb(61, 61, 61);
+
     h1 {
       font-family: 'Lato', sans-serif;
       margin-bottom: 10px;
+      @include fade-in(3.5s);
       @include fluid-type(
         $min_width,
         $max_width,
@@ -42,6 +47,7 @@ body {
     h3 {
       font-family: 'Prompt', sans-serif;
       margin: 10px 0px 10px 0px;
+      @include fade-in(4s);
       @include fluid-type($min_width, $max_width, $min_sub_font, $max_sub_font);
     }
   }
@@ -54,6 +60,8 @@ body {
         margin: 0;
         padding: 0;
       }
+
+      @include fade-in(5s);
 
       li {
         margin: 5px;
