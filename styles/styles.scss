@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Prompt:wght@200&display=swap');
+
 body {
   background-color: rgb(252, 252, 252);
   display: flex;
@@ -13,9 +15,11 @@ body {
     text-align: center;
     color: rgb(61, 61, 61);
     h1 {
+      font-family: 'Lato', sans-serif;
     }
 
     h3 {
+      font-family: 'Prompt', sans-serif;
     }
   }
 
@@ -35,6 +39,7 @@ body {
         a {
           color: rgb(99, 99, 99);
           text-decoration: none;
+          font-family: 'Prompt', sans-serif;
         }
 
         a:hover {
