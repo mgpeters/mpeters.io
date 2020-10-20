@@ -31,11 +31,10 @@ body {
   header {
     text-align: center;
     color: rgb(61, 61, 61);
-
+    @include fade-in(3.5s);
     h1 {
       font-family: 'Lato', sans-serif;
       margin-bottom: 10px;
-      @include fade-in(3.5s);
       @include fluid-type(
         $min_width,
         $max_width,
@@ -47,7 +46,6 @@ body {
     h3 {
       font-family: 'Prompt', sans-serif;
       margin: 10px 0px 10px 0px;
-      @include fade-in(4s);
       @include fluid-type($min_width, $max_width, $min_sub_font, $max_sub_font);
     }
   }
