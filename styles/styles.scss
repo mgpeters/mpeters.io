@@ -1,4 +1,18 @@
+@import 'mixins';
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Prompt:wght@200&display=swap');
+
+// Font Variables
+$min_width: 320px;
+$max_width: 1200px;
+
+$max_title_font: 50px;
+$min_title_font: 30px;
+
+$max_sub_font: 30px;
+$min_sub_font: 15px;
+
+$max_link_font: 25px;
+$min_link_font: 15px;
 
 body {
   background-color: rgb(252, 252, 252);
@@ -16,10 +30,19 @@ body {
     color: rgb(61, 61, 61);
     h1 {
       font-family: 'Lato', sans-serif;
+      margin-bottom: 10px;
+      @include fluid-type(
+        $min_width,
+        $max_width,
+        $min_title_font,
+        $max_title_font
+      );
     }
 
     h3 {
       font-family: 'Prompt', sans-serif;
+      margin: 10px 0px 10px 0px;
+      @include fluid-type($min_width, $max_width, $min_sub_font, $max_sub_font);
     }
   }
 
@@ -37,13 +60,20 @@ body {
         padding: 5px;
 
         a {
+          font-family: 'Prompt', sans-serif;
           color: rgb(99, 99, 99);
           text-decoration: none;
-          font-family: 'Prompt', sans-serif;
+          @include fluid-type(
+            $min_width,
+            $max_width,
+            $min_link_font,
+            $max_link_font
+          );
         }
 
         a:hover {
           color: rgb(109, 1, 1);
+          font-weight: bold;
         }
       }
     }
