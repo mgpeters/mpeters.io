@@ -1,16 +1,52 @@
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Prompt:wght@200&display=swap');
+
+// -- Variables --
+
+// Viewport Width
+$min_width: 320px;
+$max_width: 1200px;
+
+// Font Variables
+$max_title_font: 50px;
+$min_title_font: 30px;
+
+$max_sub_font: 27px;
+$min_sub_font: 15px;
+
+$max_link_font: 22px;
+$min_link_font: 15px;
+
 body {
   background-color: rgb(252, 252, 252);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 100%;
+  height: -moz-available; /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+  height: fill-available;
 
   header {
     text-align: center;
-
+    color: rgb(61, 61, 61);
+    @include fade-in(3.5s);
     h1 {
+      font-family: 'Lato', sans-serif;
+      margin-bottom: 10px;
+      @include fluid-type(
+        $min_width,
+        $max_width,
+        $min_title_font,
+        $max_title_font
+      );
     }
 
     h3 {
+      font-family: 'Prompt', sans-serif;
+      margin: 10px 0px 10px 0px;
+      @include fluid-type($min_width, $max_width, $min_sub_font, $max_sub_font);
     }
   }
 
@@ -18,18 +54,37 @@ body {
     .page-links__render {
       ul {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         list-style-type: none;
         margin: 0;
         padding: 0;
       }
 
+      @include fade-in(5s);
+
       li {
+        margin: 5px;
+        padding: 5px;
+
         a {
+          font-family: 'Prompt', sans-serif;
+          color: rgb(99, 99, 99);
           text-decoration: none;
+          @include fluid-type(
+            $min_width,
+            $max_width,
+            $min_link_font,
+            $max_link_font
+          );
+        }
+
+        a:hover {
+          color: rgb(109, 1, 1);
+          font-weight: bold;
         }
       }
     }
+  }
+
+  footer {
   }
 }
