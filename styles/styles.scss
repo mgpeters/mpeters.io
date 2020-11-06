@@ -98,7 +98,7 @@ body {
     height: 2.5rem;
     @include fade-in(5s);
 
-    .footer-text {
+    #footer-text {
       font-family: 'Lato', sans-serif;
       color: rgb(175, 175, 175);
       font-size: 11px;
